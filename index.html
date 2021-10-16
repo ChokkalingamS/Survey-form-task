@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aca1caa06e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<form method="post">
+    <div class="container">
+        <label for="fname" class="required"><strong >Name</strong></label><br>
+        <input type="text" name="fname" required id="fname"> 
+        <input type="text" required name="lname" id="lname"><br>
+
+        <label for="fname">First</label>
+        <label class="last" for="lname">Last</label><br><br>
+
+        <label for="email" class="required"><strong>Email</strong></label><br>
+        <input type="email" name="email" required id="email" ><br><br>
+
+        <label class="required"><strong>Your Experience</strong></label><br>
+        <div class="checkbox">
+        <input type="checkbox"  class="fa-solid fa-star"  onclick="star1()" value="1year"   name="box"  id="year1" >
+        <input type="checkbox"  class="fa-solid fa-star"  onclick="star2()" value="2years"   name="box"  id="year2" >
+        <input type="checkbox"  class="fa-solid fa-star"  onclick="star3()" value="3years"   name="box"  id="year3" >
+        <input type="checkbox"  class="fa-solid fa-star"  onclick="star4()" value="4years"   name="box"  id="year4" >
+        <input type="checkbox"  class="fa-solid fa-star"  onclick="star5()"  value="5years"  name="box"  id="year5" ><br><br></div>
+        <label>Overall,how should you rate your experience with us?</label><br><br>
+
+        <p class="required"><strong>How Satisfied are you with</strong></p>
+
+            <div class="first">
+
+            <div class="line1">
+            <p></p>
+            <p>Very Unsatisfied</p>
+            <p>Unsatisfied</p>
+            <p>Neutral</p>
+            <p>Satisfied</p>
+            <p>Very Satisfied</p></div>
+                
+            <div class="line2">
+            <div  class="Purchase">Purchase</div>
+            <div class="Purchase"><input type="radio"  name="Purchase" value="Very Unsatisfied"></div>
+            <div class="Purchase"><input type="radio" name="Purchase" value="Unsatisfied"></div>
+            <div class="Purchase"><input type="radio" name="Purchase" value="Neutral"></div>
+            <div class="Purchase"><input type="radio" name="Purchase" checked value="Satisfied"></div>
+            <div class="Purchase"><input type="radio" name="Purchase" value="Very Satisfied"></div></div>
+            
+            <div class="line3">
+             <div>Service</div>
+            <div><input type="radio" name="Service" value="Very Unsatisfied"></div>
+            <div><input type="radio" name="Service" value="Unsatisfied"></div>
+            <div><input type="radio" name="Service" value="Neutral"></div>
+            <div><input type="radio" name="Service"checked value="Satisfied"></div>
+            <div><input type="radio" name="Service" value="Very Satisfied"></div> </div>
+            
+            <div class="line4">
+            <div class="Company-OverAll">Company OverAll</div>
+            <div class="Company-OverAll"><input type="radio"  name="Company OverAll" value="Very Unsatisfied"></div>
+            <div class="Company-OverAll"><input type="radio" name="Company OverAll" value="Unsatisfied"></div>
+            <div class="Company-OverAll"><input type="radio" name="Company OverAll" value="Neutral"></div>
+            <div class="Company-OverAll"><input type="radio" checked  name="Company OverAll" value="Satisfied"></div>
+            <div class="Company-OverAll"><input type="radio" name="Company OverAll" value="Very Satisfied"></div> </div>
+            </div>
+            
+            <br><br>
+        <label class="required"><strong>How likely are you to</strong></label>
+
+        <div class="second">
+
+            <div class="line5">
+            <p></p>
+            <p>Very Unlikely</p>
+            <p>Unlikely</p>
+            <p>Neutral</p>
+            <p>likely</p>
+            <p>Very likely</p></div>
+
+            <div class="line6">
+
+            <div class="Buy-from-us-again">Buy from us again</div>
+            <div class="Buy-from-us-again"><input type="radio"  name="Buy from us again" value="Very Unlikely"></div>
+            <div class="Buy-from-us-again"><input type="radio"  name="Buy from us again" value="Unlikely"></div>
+            <div class="Buy-from-us-again"><input type="radio"  name="Buy from us again" value="Neutral"></div>
+            <div class="Buy-from-us-again"><input type="radio" checked   name="Buy from us again" value="likely"></div>
+            <div class="Buy-from-us-again"><input type="radio"  name="Buy from us again" value="Very likely"></div></div>
+            
+            
+            <div class="line7">
+
+             <div>Recommend our  product to others</div>
+            <div><input type="radio" name="Recommend our product to others" value="Very Unlikely"></div>
+            <div><input type="radio" name="Recommend our product to others" value="Unlikely"></div>
+            <div><input type="radio" name="Recommend our product to others" value="Neutral"></div>
+            <div><input type="radio" checked name="Recommend our product to others" value="likely"></div>
+            <div><input type="radio" name="Recommend our product to others" value="Very likely"></div> </div>
+
+            <div class="line8">
+
+            <div class="Recommend-our-company-to-others">Recommend our company to others</div>
+            <div class="Recommend-our-company-to-others"><input type="radio"  name="Recommend our company to others" value="Very Unlikely"></div>
+            <div class="Recommend-our-company-to-others"><input type="radio" name="Recommend our company to others" value="Unlikely"></div>
+            <div class="Recommend-our-company-to-others"><input type="radio" name="Recommend our company to others" value="Neutral"></div>
+            <div class="Recommend-our-company-to-others"><input type="radio" checked name="Recommend our company to others" value="likely"></div>
+            <div class="Recommend-our-company-to-others"><input type="radio" name="Recommend our company to others" value="Very likely"></div> </div>
+            </div>
+            
+            <br><br>
+
+            <label><strong>Addional Comments or Suggestions</strong></label>
+            <textarea class="text" name="comments"></textarea><br><br>
+    
+            <button  class="submit"value="Submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+</html>
